@@ -71,7 +71,8 @@ Filesystem = Disk (persistent, unlimited)
 → Anything important gets written to disk.
 ```
 
-### Workflow Diagram
+<details>
+<summary><strong>Workflow Diagram</strong> (click to expand)</summary>
 
 This diagram shows how the three files work together and how hooks interact with them:
 
@@ -178,6 +179,8 @@ This diagram shows how the three files work together and how hooks interact with
 - **2-Action Rule**: After every 2 view/browser/search operations, update `findings.md`
 - **Phase Completion**: Update both `task_plan.md` (status) and `progress.md` (details)
 - **Error Handling**: Log errors in both `task_plan.md` and `progress.md`
+
+</details>
 
 ## Installation
 
