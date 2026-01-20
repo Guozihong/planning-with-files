@@ -8,6 +8,27 @@ alwaysApply: false
 
 Work like Manus: Use persistent markdown files as your "working memory on disk."
 
+## Session Recovery
+
+**Before starting work**, check if you have unfinished context from a previous session:
+
+1. Review your project's recent git history with `git log --oneline -10`
+2. Check `git diff --stat` to see uncommitted changes
+3. Read existing planning files (`task_plan.md`, `findings.md`, `progress.md`)
+4. Update planning files with any missing context from git history
+5. Then proceed with your current task
+
+This manual recovery ensures you don't lose important decisions or discoveries when starting a new session.
+
+## Important: Where Files Go
+
+**Create all planning files in your project root directory:**
+- `task_plan.md` — In your project root
+- `findings.md` — In your project root
+- `progress.md` — In your project root
+
+Do NOT create these files in the `.cursor/` directory. They belong in your main project folder where your code lives.
+
 ## Quick Start
 
 Before ANY complex task:
